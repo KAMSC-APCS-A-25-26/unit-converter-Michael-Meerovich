@@ -26,9 +26,13 @@ public class TimeConverter {
             total = hourseconds + minuteseconds + seconds;
 
             System.out.println("\nTime Conversion:  ");
+            System.out.println ("Input: " + hours + " hour, " + minutes + " minute, and " + seconds + " second");
+            System.out.println ("Total seconds: " + total + " seconds\n");
+
+            System.out.println ("Calculation:");
             System.out.println(hours + " hours * 3600 = " + hourseconds + " seconds");
             System.out.println(minutes + " minutes * 60 = " + minuteseconds + " seconds");
-            System.out.println(seconds + "seconds = " + seconds + " seconds");
+            System.out.println(seconds + " seconds = " + seconds + " seconds");
             System.out.println("Total: " + total + " seconds\n");
 
             System.out.print("Do you want to convert another time?  (y/n):  ");
@@ -36,10 +40,12 @@ public class TimeConverter {
             if (repeat == 'y')
             {
                 run = true;
+                System.out.println();
             }
             else
             {
                 run = false;
+                System.out.print ("\nGoodbye!");
             }
         }
     }

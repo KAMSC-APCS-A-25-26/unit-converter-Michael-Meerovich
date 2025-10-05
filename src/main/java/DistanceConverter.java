@@ -21,25 +21,29 @@ public class DistanceConverter {
             System.out.println ("1. Convert Miles to Kilometers");
             System.out.println ("2. Convert Kilometers to Miles");
             System.out.println ("3. Exit");
-            System.out.print ("Enter choice:  ");
+            System.out.print ("\nEnter choice:  ");
             choice = sc.nextInt ();
             switch(choice)
             {
                 case 1:
-                    System.out.print ("\n\nEnter distance in miles:  ");
+                    System.out.print ("Enter distance in miles:  ");
                     distance = sc.nextDouble ();
+                    System.out.println ("\nConversion Results:");
+                    System.out.println ("Miles: " + distance);
                     distance *= 1.60935;
-                    System.out.println ("The distance is " + distance + " kilometers\n");
+                    System.out.println ("kilometers: " + distance + "\n");
                     break;
                 case 2:
                     System.out.print ("\n\nEnter distance in kilometers:  ");
                     distance = sc.nextDouble ();
+                    System.out.println ("\nConversion Results:");
+                    System.out.println ("Kilometers:" + distance);
                     distance /= 1.60935;
-                    System.out.println ("The distance is " + distance + " miles\n");
+                    System.out.println ("Miles: " + distance + "\n");
                     break;
                 case 3:
                     run = false;
-                    System.out.println ("\nGoodbye");
+                    System.out.println ("\nGoodbye!");
                     break;
             }
         }

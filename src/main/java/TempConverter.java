@@ -20,27 +20,31 @@ public class TempConverter {
             System.out.println ("1. Convert Fahrenheit to Celsius");
             System.out.println ("2. Convert Celsius to Fahrenheit");
             System.out.println ("3. Exit");
-            System.out.print ("Enter choice:  ");
+            System.out.print ("\nEnter choice:  ");
             choice = sc.nextInt ();
             switch(choice)
             {
                 case 1:
-                    System.out.print ("\n\nEnter temperature in Fahrenheit:  ");
+                    System.out.print ("Enter temperature in Fahrenheit:  ");
                     temperature = sc.nextDouble ();
+                    System.out.println ("\nConversion Results:");
+                    System.out.println ("Fahrenheit: " + temperature);
                     temperature -= 32;
                     temperature *= (5.0/9.0);
-                    System.out.print ("The temperature in Celsius is " + temperature + " degrees\n\n");
+                    System.out.print ("Celsius: " + temperature + "\n\n");
                     break;
                 case 2:
-                    System.out.print ("\n\nEnter the temperature in Celsius:  ");
+                    System.out.print ("Enter the temperature in Celsius:  ");
                     temperature = sc.nextDouble ();
+                    System.out.println ("\nConversion Results:");
+                    System.out.println ("Celsius: " + temperature);
                     temperature *= (9.0/5.0);
                     temperature += 32;
-                    System.out.print ("The temperature in Fahrenheit is " + temperature + " degrees\n\n");
+                    System.out.print ("Fahrenheit: " + temperature + "\n\n");
                     break;
                 case 3:
                     run = false;
-                    System.out.println ("\nGoodbye");
+                    System.out.println ("\nGoodbye!");
                     break;
             }
         }
